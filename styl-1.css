@@ -1,0 +1,86 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut{
+  0% { opacity: 1;}
+  100% { opacity: 0 }
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a, .s{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+  }
+
+  li a:hover, .s:hover .sub {
+    background-color: rgb(151, 42, 133);
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.5s;
+    margin-top: 5px;
+    box-sizing:border-box;
+  }
+
+  li.s {
+    display: inline-block;
+  }
+  .sub1 a:hover {
+    background-color: #f1f1f1;
+    transition: 0.5s;
+    display: block;
+  }
+  .sub1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0px 10px 10px 10px;
+    transition: 0.5s;
+  }
+
+  .sub1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: 0.5s;
+  }
+
+  .s:hover .sub1 {
+    animation: fadeIn 0.5s ease-in ;
+    display: block;
+  }
+  .najger{
+    display: inline-block;
+    margin-top: 10px;
+    }
+  body{
+    background-image: linear-gradient(to right, rgb(88, 38, 76) , rgb(35, 29, 61));
+  }
+  .ul{
+    padding: 10px;  
+  }
+  nav{
+    width: 100%;
+    background-color: rgb(39, 16, 39);
+    border-radius: 10px;
+    padding: 0% 0% 0% 35% ;
+    margin: 0px;
+    
+  }
